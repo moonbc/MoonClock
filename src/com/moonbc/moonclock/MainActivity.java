@@ -2,30 +2,19 @@
 package com.moonbc.moonclock;
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.TimeZone;
-
-
-
-import android.support.v4.app.Fragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
-import android.os.Build;
 
 
 
 
-//public class MainActivity extends ActionBarActivity {
+
 public class MainActivity extends Activity {
 
-    private static final String DATE_FORMAT = "%2d:%02d:%02d:%02d";
+    private static final String DATE_FORMAT = "%2d:%02d:%02d";
 //    private static final int REFRESH_DELAY = 500;
     private static final int REFRESH_DELAY = 5;
     
@@ -40,7 +29,7 @@ public class MainActivity extends Activity {
         if(calendar != null) {
             if(mTextView != null) {
                 mTextView.setText(String.format(DATE_FORMAT, calendar.get(Calendar.HOUR_OF_DAY),
-                        calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND),calendar.get(Calendar.MILLISECOND)/10 ));
+                        calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND) ));
             }
         }
 

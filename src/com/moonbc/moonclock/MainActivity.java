@@ -15,6 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     private static final String DATE_FORMAT = "%2d:%02d:%02d";
+    private static final String WEEK_FORMAT = "%2d:%02d:%02d";
 //    private static final int REFRESH_DELAY = 500;
     private static final int REFRESH_DELAY = 5;
     
